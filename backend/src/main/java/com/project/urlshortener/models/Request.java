@@ -10,7 +10,8 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 public class Request {
-    @NotBlank(message = "URL cannot be empty")
+
+    @NotBlank(message = "`longUrl` cannot be empty")
     private String longUrl;
 
     private boolean custom;

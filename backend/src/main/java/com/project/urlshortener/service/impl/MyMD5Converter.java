@@ -27,15 +27,19 @@ public class MyMD5Converter implements URLConversionService {
     }
 
     /**
-     * This is exclusive to upper. Generates `count` random numbers between lower and upper
-     * (excluding upper)
+     * This is exclusive to upper. Generates `count` random and unique numbers between lower and
+     * upper (excluding upper)
      */
     private List<Integer> getRandomNumbers(int count, int lower, int upper) {
         List<Integer> result = new ArrayList<>();
-        for (int i = 0; i < count; i++) {
-            int r = (int) (Math.random() * (upper - lower)) + lower;
-            result.add(r);
-        }
+        int i = 0;
+        int r;
+        do {
+            r = (int) (Math.random() * (upper - lower)) + lower;
+            if (!result.contains(r)) {
+                result.add(r);
+            }
+        } while (result.size() < count);
         return result;
     }
 }

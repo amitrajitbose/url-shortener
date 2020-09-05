@@ -13,5 +13,5 @@ import lombok.Setter;
 public class ShortenedUrlResponse {
     private String shortKey;
     private Date creationDate;
-    private Date validUpto;
+    private Date expirationDate;
 }

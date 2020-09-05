@@ -20,7 +20,7 @@ Response Payload:
 {
     shortKey: "h3jS6x", 
     creationDate: "2020-09-05T06:52:59.096Z", 
-    validUpto: "2025-09-05T06:52:59.096Z"
+    expirationDate: "2025-09-05T06:52:59.096Z"
 }
 ```
 

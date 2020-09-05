@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Request {
     @NotBlank(message = "URL cannot be empty")
-    private String url;
+    private String longUrl;
 
     private boolean custom;
 

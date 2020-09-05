@@ -9,11 +9,11 @@
 
 - For Auto Generated Short-URL
 
-Request Payload: `{url: "https://www.example.com/", custom: false}`
+Request Payload: `{longUrl: "https://www.example.com/", custom: false}`
 
 - For Custom Short-URL
 
-Request Payload: `{url: "https://www.example.com/", custom: true, shortKey: "example"}`
+Request Payload: `{longUrl: "https://www.example.com/", custom: true, shortKey: "example"}`
 
 Response Payload: 
 ```

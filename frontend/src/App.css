@@ -1,0 +1,29 @@
+.App {
+  background: #ccc;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.url-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.url-form input[type=submit] {
+  margin: 10px 0;
+}
+
+.response-box {
+  border: 1px solid;
+  padding: 10px;
+  background: white;
+  color: #aaa;
+}

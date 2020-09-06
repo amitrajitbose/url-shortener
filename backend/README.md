@@ -6,7 +6,7 @@
 - GET /{shortUrl}
 - GET /api/v1/health
 
-#### POST /
+#### POST /api/v1/
 
 - For Auto Generated Short-URL
 

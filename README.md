@@ -8,6 +8,7 @@
 
 ## To Run Frontend Locally
 
-(In Progress)
-
+- Go to frontend, and install the dependencies using `npm i`.
+- Start the dev server with `npm start`
+- More info available on frontend page
  

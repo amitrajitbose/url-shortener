@@ -1,6 +1,14 @@
+# URL Shortener
+
+## Backend
+
+Have a look at the [backend repository](https://github.com/amitrajitbose/url-shortener-backend) for this application.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## To Run Frontend Locally
+
+### Available Scripts
 
 In the project directory, you can run:
 

@@ -16,10 +16,10 @@ code {
     monospace;
 }
 
-input[type=url] {
+input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
+  margin: 10px 0 0 0;
   font-variant: tabular-nums;
   list-style: none;
   -webkit-font-feature-settings: "tnum";
@@ -44,7 +44,11 @@ input:active, input:focus {
   border: none;
 }
 
-input[type=submit] {
+input:invalid {
+  color: red
+}
+
+button {
   line-height: 1.5715;
   position: relative;
   display: inline-block;
@@ -72,8 +76,9 @@ input[type=submit] {
   border: 1px solid #d9d9d9;
 }
 
-input.btn {
+button.btn {
   color: #fff;
   background: #1890ff;
   border-color: #1890ff;
+  margin: 10px 0;
 }

@@ -15,10 +15,11 @@
   width: 400px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.url-form input[type=submit] {
-  margin: 10px 0;
+.url-form .btn {
+  width: 100%;
 }
 
 .response-box {

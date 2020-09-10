@@ -66,3 +66,28 @@ footer div.social-media-links a:hover svg path,
 footer div.social-media-links a:hover svg circle {
   fill: #0ebac7;
 }
+
+@media only screen and (max-width: 768px) {
+  .footer-credits {
+    font-size: 12px;
+  }
+}
+
+.footer-credits a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.footer-credits {
+  position: fixed;
+  font-size: 12px;
+  font-weight: bold;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: rgb(189, 11, 11) !important; */
+  color: white;
+  text-align: center;
+  padding-top: 1mm;
+  padding-bottom: 1mm;
+}

@@ -6,7 +6,8 @@ Have a look at the [backend repository](https://github.com/amitrajitbose/url-sho
 
 ## Frontend
 
-This Project uses React 16.13, which comes with all the latest features of hooks, context API. No other Library used. 
+This Project uses React 16.13, which comes with all the latest features of hooks, context API. No other Library used.
+ES-Lint is used with [lint-staged](https://www.npmjs.com/package/lint-staged) and [husky](https://www.npmjs.com/package/husky) to maintain a proper Style for better development experience.
 
 ## To Run Frontend Locally
 
@@ -17,9 +18,9 @@ This Project uses React 16.13, which comes with all the latest features of hooks
 ## Pending Improvements
 - [x] Introduce Custom key
 - [x] Error handling
-- [ ] Project Structure
+- [X] Project Structure
 - [ ] Delete a shortened URL
-- [ ] Health Check | Backend
-- [ ] Code Refactor
+- [X] Health Check | Backend
+- [X] Code Refactor
 - [ ] Use Context API
 

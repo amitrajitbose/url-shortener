@@ -5,7 +5,9 @@ import "./style.css";
 const Footer = () => {
   return(
     <footer>
-    <div class="social-media-links">
+      <div className="footer-credits">Made with <i className="fa fa-heart"></i> by <a href="https://twitter.com/AmitrajitBose" target="_blank" rel="noopener noreferrer">@AmitrajitBose</a> & <a href="https://github.com/Pkfication" target="_blank" rel="noopener noreferrer">@Pkfication</a></div>
+    
+    {/* <div class="social-media-links">
       <ul>
         <li>
           <a href="#">
@@ -52,7 +54,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-    </div>
+    </div> */}
   </footer>
   )
 }

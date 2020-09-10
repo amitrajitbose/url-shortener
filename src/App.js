@@ -56,21 +56,20 @@ function App() {
         } 
         <input
           type="url"
-          placeholder="Please Enter an URL to be shortened"
+          placeholder="URL to be shortened"
           required
         />
         <input type="text"
-          placeholder="Custom Key (1-6) Long"
-          pattern="^[a-zA-Z0-9]{1,}$"
+          placeholder="Custom Key (Optional)"
+          pattern="^[a-zA-Z0-9]{1,16}$"
         />
         <button className="btn" disabled={submitting} type="submit">
           Shorten
         </button>
-      </form>
-      {shortUrls.length > 0 && 
+        {shortUrls.length > 0 && 
         <section>
           <ul className="number-list">
-            { shortUrls.map(url =>(
+            { shortUrls.slice(Math.max(shortUrls.length - 6, 0)).map(url =>(
               <li className="number-list-item">
                 <a href={url} target="_blank" rel="noopener noreferrer">{url}</a>
               </li>
@@ -78,6 +77,7 @@ function App() {
           </ul>
         </section>
       }
+      </form>
       <Footer />
     </div>
   );

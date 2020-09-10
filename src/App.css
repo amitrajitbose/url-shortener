@@ -8,11 +8,11 @@
 
 svg {
   height: 150px;
-  color: #0096a1;
+  color: #2EE59D; /*#0096a1;*/
 }
 
 .url-form {
-  width: 400px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +20,29 @@ svg {
 
 .url-form .btn {
   width: 100%;
+  /* width: 140px; */
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.url-form .btn:hover {
+  width: 50%;
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  /* transform: translateY(-5px); */
 }
 
 /* List */
@@ -34,19 +57,20 @@ li.number-list-item {
   counter-increment: index; 
   display: flex;
   align-items: center;
-  padding: 12px 0;
+  padding: 2px 0;
   box-sizing: border-box;
 }
 
 li.number-list-item a {
   color: white;
   font-weight: 800;
+  font-size: 10px;
 }
 
 /* Element counter */
 li.number-list-item::before {
-  content: counters(index, ".", decimal-leading-zero);
-  font-size: 1.5rem;
+  content: "•"; /*counters(index, ".", decimal-leading-zero);*/
+  font-size: 2.0rem;
   text-align: right;
   font-weight: bold;
   min-width: 50px;
@@ -63,4 +87,28 @@ li.number-list-item::before {
 /* Element separation */
 li.number-list-item + li.number-list-item {
   border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer-credits {
+  position: fixed;
+  font-size: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: rgb(189, 11, 11) !important; */
+  color: white;
+  text-align: center;
+  padding-top: 1mm;
+  padding-bottom: 1mm;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-credits {
+    font-size: 8px;
+  }
+}
+
+.footer-credits a{
+  color: #FFF;
+  text-decoration: none;
 }

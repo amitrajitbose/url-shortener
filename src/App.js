@@ -88,14 +88,14 @@ function App() {
                     </svg>
                   )}
               </div>
-              <input
+              <input className="inputBox"
                 type="url"
                 placeholder="URL to be shortened"
                 required
               />
-              <input
+              <input className="inputBox"
                 type="text"
-                placeholder="Custom Key (Optional)"
+                placeholder="ur-l.herokuapp.com/? Custom key? (Optional)"
                 pattern="^[a-zA-Z0-9]{1,16}$"
               />
               <button className="btn" disabled={submitting} type="submit">

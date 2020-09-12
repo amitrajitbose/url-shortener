@@ -52,4 +52,8 @@ svg {
   color: #fff;
 }
 
-
+.url-form .inputBox {
+  border-radius: 45px;
+  height: 35px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}

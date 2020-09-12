@@ -6,7 +6,8 @@ const Footer = () => (
   <footer>
     <div className="footer-credits">
       Made with
-      <i className="fa fa-heart" />
+      {' '}
+      <i className="fa fa-heart-o" />
       {' '}
       by
       {' '}

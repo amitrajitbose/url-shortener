@@ -67,12 +67,6 @@ footer div.social-media-links a:hover svg circle {
   fill: #0ebac7;
 }
 
-@media only screen and (max-width: 768px) {
-  .footer-credits {
-    font-size: 12px;
-  }
-}
-
 .footer-credits a {
   color: #FFF;
   text-decoration: none;
@@ -80,8 +74,8 @@ footer div.social-media-links a:hover svg circle {
 
 .footer-credits {
   position: fixed;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 10px;
+  /* font-weight: bold; */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -89,5 +83,11 @@ footer div.social-media-links a:hover svg circle {
   color: white;
   text-align: center;
   padding-top: 1mm;
-  padding-bottom: 1mm;
+  padding-bottom: 2mm;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-credits {
+    font-size: 8px;
+  }
 }

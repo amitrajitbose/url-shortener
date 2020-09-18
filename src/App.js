@@ -49,7 +49,8 @@ function App() {
     } catch (err) {
       setSubmitting(false);
       // eslint-disable-next-line no-alert
-      alert(`${err}`);
+      alert('Something went wrong, please retry!\n' + `${err}`);
+      window.location.reload();
     }
   };
 
@@ -95,7 +96,7 @@ function App() {
               />
               <input className="inputBox"
                 type="text"
-                placeholder="ur-l.herokuapp.com/? Custom key? (Optional)"
+                placeholder="Custom alias (Optional)"
                 pattern="^[a-zA-Z0-9]{1,16}$"
               />
               <button className="btn" disabled={submitting} type="submit">
